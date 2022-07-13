@@ -1,0 +1,29 @@
+{
+  "name": "order-api",
+  "version": "1.0.0",
+  "description": "sequelize-crud",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "migration": "sequelize-cli db:migrate",
+    "create_migration": "sequelize-cli migration:generate --name",
+    "create_seeder": "sequelize-cli seed:generate --name",
+    "seeder": "sequelize-cli db:seed:all"
+  },
+  "keywords": [
+    "sequlize-mysql-nodejs-migrations-seeders-restAPI"
+  ],
+  "author": "jepski",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
+    "sequelize": "^6.21.3",
+    "sequelize-cli": "^6.4.1"
+  }
+}
